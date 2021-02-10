@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".AddCustomerActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dashboardbg"
+        android:padding="10dp"
+        android:hint="কাস্টমার /সেলার নাম"
+        android:id="@+id/addCustomer_CustomerNameEditext"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:drawableLeft="@drawable/add_person_icon"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dashboardbg"
+        android:padding="10dp"
+        android:layout_below="@+id/addCustomer_CustomerNameEditext"
+        android:hint="কাস্টমার/সেলার ফোন নাম্বার"
+        android:id="@+id/addCustomer_MobileNumberEdittext"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/phone_icon"
+        android:drawablePadding="10dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/rd1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/addCustomer_MobileNumberEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <RadioButton
+                android:layout_marginRight="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/customerRadioButton"
+                android:text="কাস্টমার"
+
+               />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sellerRadioButton"
+                android:text="সেলার"
+
+                />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dashboardbg"
+        android:padding="10dp"
+        android:layout_below="@+id/rd1"
+        android:hint="পূর্বের জের"
+        android:id="@+id/addCustomer_previousGetMoney"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dashboardbg"
+        android:padding="10dp"
+        android:layout_below="@+id/addCustomer_previousGetMoney"
+        android:hint="বিবরন"
+        android:id="@+id/addCustomer_DetailsEditText"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addCustomerButton"
+        android:layout_marginTop="10dp"
+        android:text="নিশ্চিত"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

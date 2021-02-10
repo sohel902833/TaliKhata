@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cd1"
+
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/purple_200"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        >
+
+        <RelativeLayout
+           android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+               android:textStyle="bold"
+                android:textColor="#000"
+               android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sohel@gmail.com"
+                android:textSize="18sp"
+                android:id="@+id/login_autoEmailTextviewid"
+
+                />
+            <TextView
+               android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/login_autoEmailTextviewid"
+                android:textStyle="bold"
+                android:textColor="#000"
+               android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01740244739"
+                android:textSize="18sp"
+              android:id="@+id/login_autoPhoneTextviewid"
+                />
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/login_EmailEdittextid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:padding="10dp"
+                android:hint="Enter Your First Name"
+               />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+               android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login Another Account"
+                android:textSize="16sp"
+                android:id="@+id/login_loginAnotherAccountTextviewid"
+                android:layout_below="@+id/login_autoPhoneTextviewid"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cd1"
+        android:id="@+id/login_PasswordEdittextid"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:padding="10dp"
+        android:hint="Enter Your Password"
+        />
+    <TextView
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_PasswordEdittextid"
+        android:layout_marginTop="10dp"
+        android:text="Don\'t have an account?Register"
+        android:id="@+id/registerActivityLink"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerActivityLink"
+        android:layout_marginTop="10dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/login_LoginButtonid"
+
+        />
+
+
+</RelativeLayout>

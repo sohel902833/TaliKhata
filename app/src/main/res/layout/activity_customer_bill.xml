@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerBillActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/blr1"
+        android:background="@drawable/dashboardbg"
+        android:padding="15dp"
+        >
+
+      <Button
+
+          android:layout_width="40dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/back_icon"
+          android:id="@+id/bill_BackButtonid"
+          />
+
+
+        <TextView
+            android:layout_toRightOf="@+id/bill_BackButtonid"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape1"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="Sk"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/bill_UserNameSymbleTextviewid"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill_CustomerNameTextviewid"
+            android:layout_toRightOf="@+id/bill_UserNameSymbleTextviewid"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="মোঃ সোহরাব হোসাইন "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill_CustomerAccountTextviewid"
+            android:layout_below="@+id/bill_CustomerNameTextviewid"
+            android:layout_toRightOf="@+id/bill_UserNameSymbleTextviewid"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:text="মোঃ সোহরাব হোসাইন "
+            />
+        <Button
+            android:id="@+id/bill_DetailsButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+             android:background="@drawable/details_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bln1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/blr1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:inputType="number"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:hint="দিলাম"
+            android:padding="10dp"
+            android:background="@drawable/dashboardbg"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill_getMoneyEdittextid"
+            />
+        <EditText
+            android:inputType="number"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:hint="পেলাম"
+            android:padding="10dp"
+            android:background="@drawable/dashboardbg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill_givenMoneyEdittextid"
+            />
+
+    </LinearLayout>
+    <EditText
+        android:layout_marginTop="15dp"
+       android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="18sp"
+       android:hint="বিস্তারিত"
+        android:padding="10dp"
+        android:background="@drawable/dashboardbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bln1"
+        android:id="@+id/bill_DetailsEdittextid"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="নিশ্চিত"
+        android:background="@drawable/dashboardbg"
+        android:textSize="18sp"
+        android:id="@+id/addCustomerBillButton"
+        />
+
+
+</RelativeLayout>
